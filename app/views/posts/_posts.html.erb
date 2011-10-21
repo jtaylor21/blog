@@ -1,0 +1,7 @@
+<% @posts.each do |post| %>
+
+	<h2><%= link_to post.title, post %></h2>
+	<p>Posted on <%= time_tag(post.created_at, :format => '%B %d, %Y') %></p>
+	<%= post.body %>
+	
+<% end %>

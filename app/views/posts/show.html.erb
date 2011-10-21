@@ -1,16 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p><h2><%= @post.title %></h2></p>
-<p>Posted on <%= time_tag(@post.created_at, :format => '%B %d, %Y') %></p>
-
-<p><%= @post.body %></p>
-
-<p>
-  <b>category:</b>
-  <%= @post.category %>
-</p>
-
+<%= render 'post' %>
 
 <%= link_to 'edit', edit_post_path(@post) %> |
+
 <%= link_to 'delete', @post, :confirm => 'Are you sure?', :method => :delete %> |
+
 <%= link_to 'back', posts_path %>

@@ -6,8 +6,10 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-<h1>The Blog of Vincent Cabansag</h1>
+<h1><%= link_to 'The Blog of Vincent Cabansag', posts_url %></h1>
 <%= yield %>
 </body>
+
 </html>

@@ -5,3 +5,30 @@
  *= require_self
  *= require_tree . 
 */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, serif;
+	font-weight: lighter;
+}
+
+p{
+	font-family: Georgia, serif;
+}
+
+body {
+	font-family: Georgia, serif;
+	line-height: 1.8em;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 50px	;
+	padding-bottom: 50px;
+}
+
+a:link { color: #000}
+
+a:visited { color: #000}
+
+a:hover { color: #000}
+
+a:active { color: #000}
+
