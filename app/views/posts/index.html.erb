@@ -1,3 +1,13 @@
 <p><%= render 'posts' %></p>
 
-<p><%= link_to 'New Post', new_post_path %></p>
+<% if signed_in? %>
+<p><%= link_to 'New Post', new_post_url %></p>
+<% else %>
+<% end %>
+
+<% if signed_in? %>
+Logged in as <%= @current_user.name %> | <%= link_to 'Logout', signout_url, :method => :delete %>
+<% else %>
+<p><%= link_to 'Login', new_session_url %></p>
+<% end %>
+
