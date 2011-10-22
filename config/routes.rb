@@ -1,19 +1,12 @@
 Blog::Application.routes.draw do
   
-<<<<<<< HEAD
   resources :posts
   resources :users
-
-=======
-  resources :posts  
-  resources :users
   resources :sessions, :only => [:new, :create, :delete]
-  
 
   match '/signup',  :to => 'users#new'
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
->>>>>>> sessions
   
   root :to => 'posts#index'
 
