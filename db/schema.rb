@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111022024251) do
+ActiveRecord::Schema.define(:version => 20111022144300) do
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -20,14 +20,12 @@ ActiveRecord::Schema.define(:version => 20111022024251) do
     t.datetime "updated_at"
   end
 
-  create_table "tweets", :force => true do |t|
-    t.string   "from_user"
-    t.string   "from_user_id_str"
-    t.string   "profile_image_url"
-    t.string   "text"
-    t.datetime "twitter_created_at"
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "encrypted_password"
   end
 
 end
