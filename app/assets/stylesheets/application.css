@@ -6,28 +6,83 @@
  *= require_tree . 
 */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
+	color: #080808;
 	font-family: Georgia, serif;
 	font-weight: lighter;
+	line-height: 0em;
+
 }
 
-p{
-	font-family: Georgia, serif;
+h7 {
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
+	font-size: .75em;
+	color: #848484;	
+	text-transform: uppercase;
+	letter-spacing: .10em;
+	line-height: 0em;
 }
 
-body {
+
+a:link { color: #000; text-decoration: none; }
+a:visited { color: #000; text-decoration: none;}
+a:hover { color: #000; text-decoration: underline;}
+a:active { color: #000; text-decoration: none;}
+
+#header {
+	font-size: 110%;
+	margin: 50px 0px 60px 200px;
+}
+
+# TODO fix colors
+#flash {
+	color: 'red';
+}
+
+
+#content {
+	size: 80%;
+	color: #1C1C1C;
 	font-family: Georgia, serif;
 	line-height: 1.8em;
-	padding-left: 150px;
-	padding-right: 150px;
-	padding-top: 50px	;
-	padding-bottom: 50px;
+	width: 640px;
+	float: left;
+	margin: 0px 0px 50px 200px;
 }
 
-a:link { color: #000}
 
-a:visited { color: #000}
 
-a:hover { color: #000}
+#sidebar {
+	size: 80%;
+	color: #1C1C1C;
+	font-family: Georgia, serif;
+	margin: 0px 0px 0px 850px;
+	padding-left: 35px;
+	padding-right: 80px;
+	line-height: 2.0em;
+}
+#sidebar_title{
+	width: 300px;
+	font-size: 80%;
+	color: #848484;
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
+	text-transform: uppercase;
+	border-bottom-style: solid;
+	border-color:#E9E9E9;
+	border-bottom-width: 1px;
+	line-height: 1.4em;
+}
 
-a:active { color: #000}
+#sidebar_content{
+	size: 80%;
+	color: #1C1C1C;
+	font-family: Georgia, serif;
+	line-height: 2.0em;
+	margin: 7px 0px 0px 5px;
+}
+
+
+#footer {
+	text-align: center;
+	float: bottom;
+}

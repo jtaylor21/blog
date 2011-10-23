@@ -2,6 +2,8 @@
 
 <%= render 'post' %>
 
+
+
 <% if signed_in? %>
 <%= link_to 'edit', edit_post_path(@post) %> |
 <%= link_to 'delete', @post, :confirm => 'Are you sure?', :method => :delete %> |

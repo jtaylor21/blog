@@ -1,0 +1,14 @@
+<div id="sidebar_title">RECENT POSTS</div>
+
+<div id="sidebar_content">
+<% @posts.each do |post| %>
+	<%= link_to post.title, post %>
+	<br />
+<% end %>
+
+<% if signed_in? %>
+Logged in as <%= @current_user.name %> | <%= link_to 'Logout', signout_url, :method => :delete %>
+<% else %>
+<p><%= link_to 'Login', new_session_url %></p>
+<% end %>
+</div>

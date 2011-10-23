@@ -1,7 +1,9 @@
 <% @posts.each do |post| %>
 
 	<h2><%= link_to post.title, post %></h2>
-	<p>Posted on <%= time_tag(post.created_at, :format => '%B %d, %Y') %></p>
+	<p><h7>Posted on <%= time_tag(post.created_at, :format => '%B %d, %Y') %></h7></p>
 	<%= post.body %>
+	<br />
+	<br />
 	
 <% end %>

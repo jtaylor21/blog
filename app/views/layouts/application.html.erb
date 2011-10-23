@@ -6,21 +6,26 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-
 <body>
-<h1><%= link_to 'The Blog of Vincent Cabansag', posts_url %></h1>
-<!DOCTYPE html>
 
+<div id="header">
+	<h1><%= link_to 'The Blog of Vincent Cabansag', posts_url %></h1>
+</div>
 
-      <section class="round">
-        <% flash.each do |key, value| %>
-          <div class="flash <%= key %>"><%= value %></div>
-        <% end %>
-      </section>
+<% flash.each do |key, value| %>
+<div id="flash" <%= key %>"><%= value %></div>
+<% end %>
 
-
+<div id="content">
 <%= yield %>
+</div>
+
+<div id="sidebar">
+<%= yield :sidebar %>
+</div>
+
+<div id="footer">
+</div>
 
 </body>
-
 </html>
