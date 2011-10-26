@@ -1,8 +1,14 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
-  def index
+  
+  before_filter :getposts, :only => [:index, :show]
+  
+  def getposts
     @posts = Post.all.reverse
+  end
+
+  def index
 
     respond_to do |format|
       format.html # index.html.erb

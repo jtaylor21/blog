@@ -2,7 +2,7 @@
 
 	<h2><%= link_to post.title, post %></h2>
 	<p><h7>Posted on <%= time_tag(post.created_at, :format => '%B %d, %Y') %></h7></p>
-	<%= post.body %>
+	<%= post.body.html_safe %>
 	<br />
 	<br />
 	
