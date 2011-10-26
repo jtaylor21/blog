@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   before_filter :getposts, :only => [:index, :show]
   
   def getposts
-    @posts = Post.all(:order => "created_at DESC")
+    @posts = Post.order("created_at DESC")
   end
 
   def index

@@ -1,9 +1,6 @@
 <%= render 'posts' %>
 
-<% if signed_in? %>
-<p><%= link_to 'New Post', new_post_url %></p>
-<% else %>
-<% end %>
+
 
 
 <% content_for :sidebar do %>
