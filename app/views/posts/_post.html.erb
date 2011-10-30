@@ -1,5 +1,5 @@
 <p><h2><%= @post.title %></h2></p>
-<p>Posted on <%= time_tag(@post.created_at, :format => '%B %d, %Y') %></p>
+<p><h7>Posted on <%= time_tag(@post.created_at, :format => '%B %d, %Y') %></h7></p>
 
 <p><%= @post.body.html_safe %></p>
 
