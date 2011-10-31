@@ -24,10 +24,15 @@ h7 {
 }
 
 
-a:link { color: #000; text-decoration: none; }
-a:visited { color: #000; text-decoration: none;}
-a:hover { color: #000; text-decoration: underline;}
-a:active { color: #000; text-decoration: none;}
+a:link { color: #1F6FBF; text-decoration: none; }
+a:visited { color: #1F6FBF; text-decoration: none;}
+a:hover { color: #1F6FBF; text-decoration: underline;}
+a:active { color: #1F6FBF; text-decoration: none;}
+
+a.override:link { color: #000; text-decoration: none; }
+a.override:visited { color: #000; text-decoration: none;}
+a.override:hover { color: #000; text-decoration: underline;}
+a.override:active { color: #000; text-decoration: none;}
 
 #header {
 	font-size: 110%;
