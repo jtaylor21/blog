@@ -13,6 +13,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @posts }
+      format.rss { render :layout => false }
     end
   end
 
@@ -85,14 +86,6 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to posts_url }
       format.json { head :ok }
-    end
-  end
-  
-  def rss
-    @posts = Post.all(:select => "title, body", :order => "created_at DESC") 
-
-    respond_to do |format|
-       format.rss { render :layout => false }
     end
   end
   
