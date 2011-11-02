@@ -87,4 +87,11 @@ class PostsController < ApplicationController
       format.json { head :ok }
     end
   end
+  
+  def rss
+    @post = Post.find(:all, :order => "created_at DESC")
+    render :layout => false
+    response.headers["Content-Type"] = "application/xml; charset=utf-8"
+  end
+  
 end
