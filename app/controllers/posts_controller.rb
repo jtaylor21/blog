@@ -89,11 +89,11 @@ class PostsController < ApplicationController
   end
   
   def rss
-    @post = Post.find(:all, :order => "created_at DESC")
+    @posts = Post.all(:select => "title, body", :order => "created_at DESC") 
+
     respond_to do |format|
-          format.html
-          format.rss { render :layout => false }
-        end
+       format.rss { render :layout => false }
+    end
   end
   
 end
