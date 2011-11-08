@@ -9,7 +9,8 @@ class PostsController < ApplicationController
   end
 
   def index
-
+    @posts = Post.page params[:page]
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @posts }

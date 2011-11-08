@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,11 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20111022144300) do
-=======
 ActiveRecord::Schema.define(:version => 20111022170323) do
->>>>>>> sessions
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -30,10 +27,7 @@ ActiveRecord::Schema.define(:version => 20111022170323) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "encrypted_password"
-<<<<<<< HEAD
-=======
     t.string   "salt"
->>>>>>> sessions
   end
 
 end
