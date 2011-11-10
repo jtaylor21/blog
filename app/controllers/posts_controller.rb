@@ -1,16 +1,16 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
-  
+
   before_filter :getposts, :only => [:index, :show]
-  
+
   def getposts
-    @posts = Post.order("created_at DESC")
+    @posts = Post.order("created_at desc")
   end
 
   def index
-    @posts = Post.page params[:page]
-    
+    @posts = Post.order("created_at desc").page(params[:page]).per(4)
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @posts }
@@ -89,5 +89,5 @@ class PostsController < ApplicationController
       format.json { head :ok }
     end
   end
-  
+
 end
