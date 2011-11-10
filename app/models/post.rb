@@ -1,3 +1,3 @@
 class Post < ActiveRecord::Base
-  paginates_per 1
+  paginates_per 4
 end

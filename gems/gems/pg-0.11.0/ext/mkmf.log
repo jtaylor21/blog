@@ -1,0 +1,12 @@
+find_executable: checking for pg_config... -------------------- yes
+
+--------------------
+
+"/usr/bin/llvm-gcc -o conftest -I/usr/local/Cellar/ruby/1.9.2-p290/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/usr/local/Cellar/ruby/1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/usr/local/Cellar/ruby/1.9.2-p290/include/ruby-1.9.1 -I. -I/usr/local/Cellar/readline/6.2.1/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I/usr/local/Cellar/readline/6.2.1/include -I/usr/local/Cellar/postgresql/9.0.4/include -O3 -march=core2 -w -pipe -fno-common conftest.c  -L. -L/usr/local/Cellar/ruby/1.9.2-p290/lib -L. -L/usr/local/Cellar/readline/6.2.1/lib -L/usr/local/Cellar/postgresql/9.0.4/lib     -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
