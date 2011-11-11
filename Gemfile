@@ -41,3 +41,5 @@ end
 gem 'kaminari'
 
 gem 'paperclip'
+
+gem 'aws-s3'
