@@ -39,3 +39,5 @@ end
 # gem 'ruby-debug'
 
 gem 'kaminari'
+
+gem 'paperclip'
