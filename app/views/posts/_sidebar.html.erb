@@ -1,7 +1,7 @@
 <div id="sidebar_title">RECENT POSTS</div>
 
 <div id="sidebar_content">
-<% @posts.each do |post| %>
+<% @recent_posts.each do |post| %>
 	<%= link_to post.title, post %>
 	<br />
 <% end %>

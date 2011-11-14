@@ -5,7 +5,7 @@
   <% if post.image.present? %>
   <p><%= image_tag post.image.url(:medium) %></p>
   <% end %>
-  <%= post.body.html_safe %>
+  <%= markdown(post.body) %>
 	<br />
 	<br />
 

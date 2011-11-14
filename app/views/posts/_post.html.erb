@@ -5,7 +5,7 @@
   <p><%= image_tag @post.image.url(:medium) %></p>
 <% end %>
 
-<p><%= @post.body.html_safe %></p>
+<p><%= markdown(@post.body) %></p>
 
 <p>
   <b>category:</b>

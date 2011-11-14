@@ -43,3 +43,5 @@ gem 'kaminari'
 gem 'paperclip'
 
 gem 'aws-s3'
+
+gem 'redcarpet'

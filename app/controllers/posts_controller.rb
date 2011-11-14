@@ -5,11 +5,11 @@ class PostsController < ApplicationController
   before_filter :getposts, :only => [:index, :show]
 
   def getposts
-    @posts = Post.order("created_at desc")
+    @posts = Post.order("created_at desc").page(params[:page]).per(4)
+    @recent_posts = Post.order("created_at desc")
   end
 
   def index
-    @posts = Post.order("created_at desc").page(params[:page]).per(4)
 
     respond_to do |format|
       format.html # index.html.erb
