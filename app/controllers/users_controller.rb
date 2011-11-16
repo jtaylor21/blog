@@ -1,15 +1,15 @@
 class UsersController < ApplicationController
 
-  # before_filter :require_user
-  # 
-  # def require_user
-  #   if session[:user_id].blank?
-  #     redirect_to root_url, :notice => "Please sign in first"
-  #     return
-  #   end
-  #   
-  #   @user = User.find(session[:user_id])
-  # end
+  before_filter :require_user
+  
+  def require_user
+    if session[:user_id].blank?
+      redirect_to root_url, :notice => "Please sign in first"
+      return
+    end
+    
+    @user = User.find(session[:user_id])
+  end
   
   def new
     @user = User.new
