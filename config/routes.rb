@@ -1,8 +1,9 @@
 Blog::Application.routes.draw do
-  
+
   resources :posts
   resources :users
   resources :sessions, :only => [:new, :create, :delete]
+  resources :settings, :only => [:update, :edit, :index]
 
   match '/signup',  :to => 'users#new'
   match '/signin',  :to => 'sessions#new'
