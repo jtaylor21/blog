@@ -1,0 +1,15 @@
+<%= form_for @setting do |s| %>
+
+	<div class="field">
+		<b><%= @setting.name.titleize %> :</b>
+	</div>
+	<div class="field">
+		<%= s.text_area :value %>
+	</div>
+	<p>
+		<div class="actions">
+			<%= s.submit %>
+		</div>
+	</p>
+
+<% end %>

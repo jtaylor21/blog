@@ -1,8 +1,13 @@
 module ApplicationHelper
+  
+  def ga_code
+    @ga_code = Setting.find_by_name("ga_code").value
+  end
 
   def title
-
-      base_title = "Vincent Cabansag"
+    @setting = Setting.find_by_name("blogtitle")
+      @blogtitle = @setting.value
+      base_title = @setting.value
       if @title.nil?
         base_title
       else
@@ -16,6 +21,4 @@ module ApplicationHelper
     Redcarpet.new(text, *options).to_html.html_safe
 
   end
-
-
 end
