@@ -6,6 +6,18 @@
 	<br />
 <% end %>
 
+<br />
+
+<div id="sidebar_title">RECENT TWEETS</div>
+
+<div id="tweets">
+<% tweets.each do |t| %>
+    <%= markdown(tweet_handle_parser(t.text)) %></p>
+<% end %>
+</div>
+
+
+
 <% if signed_in? %>
 Logged in as <%= @current_user.name %> | <%= link_to 'Logout', signout_url, :method => :delete %>
 <% else %>

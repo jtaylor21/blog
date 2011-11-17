@@ -1,5 +1,5 @@
 module ApplicationHelper
-  
+
   def ga_code
     @ga_code = Setting.find_by_name("ga_code").value
   end
@@ -21,4 +21,13 @@ module ApplicationHelper
     Redcarpet.new(text, *options).to_html.html_safe
 
   end
+
+  def tweets
+    @tweets = Twitter.user_timeline("vcabansag", options = {:count => 5})
+  end
+
+  def tweet_handle_parser(tweet)
+    tweet.gsub(/@(\w+)/) { |handle| "<a href=http://twitter.com/#{$1} target=_new>@#{$1}</a>" }
+  end
+
 end
