@@ -8,4 +8,6 @@ class Post < ActiveRecord::Base
                       :secret_access_key => 'opLBuG1CrfCLJFABLIsb1xcMaZikDmqg+mhiwScl'
                     }
 
+
+
 end

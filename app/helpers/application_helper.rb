@@ -30,20 +30,28 @@ module ApplicationHelper
   end
 
   def tweets
+
+   initialize_twitter
+
+    Twitter.user_timeline(@twitter_handle, options = {:count => 5}).each do |t|
+     @tweets = Tweet.create!(:text => t.text)
+    end
+
+  end
+
+  def initialize_twitter
+
     if Setting.find_by_name("twitter_handle").nil?
       @twitter_handle = "twitter"
     else
      @twitter_handle = Setting.find_by_name("twitter_handle").value
     end
 
-    @tweets = Twitter.user_timeline(@twitter_handle, options = {:count => 5})
-
   end
 
   def tweet_handle_parser(tweet)
     tweet.gsub(/@(\w+)/) { |handle| "<a href=http://twitter.com/#{$1} target=_new>@#{$1}</a>" }
   end
-
 
 
 end
