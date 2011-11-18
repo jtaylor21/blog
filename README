@@ -1,1 +1,12 @@
 Vince Cabansag's Blog, written from scratch, with Jean's gracious help.
+
+== Settings Options
+
+Setting table requires the following name:value pairs:
+
+* ga_code: your google analytics code
+* twitter_handle: your twitter handle
+* blogtitle: your blog title
+* s3_access_key_id: your s3 access key
+* s3_secret_access_key: your s3 secret access key
+* s3_bucket: your s3 bucket name

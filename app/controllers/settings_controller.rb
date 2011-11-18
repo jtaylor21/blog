@@ -1,23 +1,25 @@
 class SettingsController < ApplicationController
+
   before_filter :require_user
-  
+
   def require_user
     if session[:user_id].blank?
       redirect_to root_url, :notice => "Please sign in first"
       return
     end
-    
+
     @user = User.find(session[:user_id])
+
   end
 
   def edit
     @setting = Setting.find(params[:id])
   end
-  
+
   def index
     @settings = Setting.all
   end
-  
+
   def update
     @setting = Setting.find(params[:id])
 
