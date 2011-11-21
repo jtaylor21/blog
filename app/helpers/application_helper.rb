@@ -33,9 +33,9 @@ module ApplicationHelper
 
    initialize_twitter
 
-   Tweet.order("created_at desc").limit(5)
+   #Tweet.order("created_at desc").limit(5)
 
-    #Twitter.user_timeline(@twitter_handle, options = {:count => 5})
+   Twitter.user_timeline(@twitter_handle, options = {:count => 5})
 
     #Twitter.user_timeline(@twitter_handle, options = {:count => 5}).each do |t|
     # @tweets = Tweet.create!(:text => t.text)
