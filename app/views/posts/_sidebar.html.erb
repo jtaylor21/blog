@@ -20,6 +20,7 @@
 
 <% if signed_in? %>
 Logged in as <%= @current_user.name %> | <%= link_to 'Logout', signout_url, :method => :delete %>
+<%= link_to "Settings", settings_url %>
 <% else %>
 <p><%= link_to 'Login', new_session_url %></p>
 <% end %>

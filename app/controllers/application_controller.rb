@@ -4,4 +4,12 @@ class ApplicationController < ActionController::Base
 
   require 'twitter'
 
+  def require_user
+     if !signed_in?
+      redirect_to root_url
+    else
+      current_user
+    end
+  end
+
 end
