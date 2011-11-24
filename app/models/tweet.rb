@@ -1,25 +1,12 @@
 class Tweet < ActiveRecord::Base
 
+
   def self.update_tweets
-  #def initialize_twitter
-    if !Setting.find_by_name("twitter_handle").present?
-       Setting.create!(:name => "twitter_handle", :value => "twitter")
-    end
-     @twitter_handle = Setting.find_by_name("twitter_handle").value
-  #end
+    twitter_handle = Settings::TwitterHandle
+    Tweet.destroy_all
+    Twitter.user_timeline(twitter_handle, :count => 10).each do |t|
 
-    Twitter.user_timeline(@twitter_handle, options = {:count => 100}).each do |t|
-
-      created_at = DateTime.parse(t.created_at)
-
-      unless Tweet.exists?(['created_at = ?', DateTime.parse(t.created_at)])
-
-        Tweet.create!({
-            :user => t.string,
-            :text => t.text,
-            :created_at => t.created_at
-        })
-      end
+      Tweet.create!(:screen_name => t.screen_name, :text => t.text, :tweet_date => t.created_at)
     end
   end
 

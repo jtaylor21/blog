@@ -28,3 +28,7 @@ Blog::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 end
+
+module Settings
+  TwitterHandle = "vcabansag"
+end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111122005010) do
+ActiveRecord::Schema.define(:version => 20111122200114) do
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -25,16 +25,10 @@ ActiveRecord::Schema.define(:version => 20111122005010) do
     t.datetime "image_updated_at"
   end
 
-  create_table "settings", :force => true do |t|
-    t.string   "name"
-    t.text     "value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "tweets", :force => true do |t|
-    t.string   "user"
-    t.text     "text"
+    t.string   "screen_name"
+    t.string   "text"
+    t.datetime "tweet_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
