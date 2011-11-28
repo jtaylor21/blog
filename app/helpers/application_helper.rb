@@ -8,19 +8,19 @@ module ApplicationHelper
     # end
   # end
 
-  # def pagetitle
-    # if Setting.find_by_name("blogtitle").nil?
-      # @blogtitle = "Blog Title"
-    # else
-      # @blogtitle = Setting.find_by_name("blogtitle").value
-    # end
+  def pagetitle
+    if Setting.find_by_name("blogtitle").nil?
+      @blogtitle = "Blog Title"
+    else
+      @blogtitle = Setting.find_by_name("blogtitle").value
+    end
 
-    # if @title.nil?
-        # @blogtitle
-      # else
-        # "#{@blogtitle} | #{@title}"
-      # end
-    # end
+    if @title.nil?
+        @blogtitle
+      else
+        "#{@blogtitle} | #{@title}"
+      end
+    end
 
   def markdown(text)
     options = [ :hard_wrap, :autolink, :no_intraemphasis, :fenced_code, :gh_blockcode]

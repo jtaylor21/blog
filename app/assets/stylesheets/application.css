@@ -6,6 +6,10 @@
  *= require_tree .
 */
 
+#flash {
+	color: green;
+  margin: 0px 0px 0px 200px;
+}
 h1, h2, h3, h4, h5 {
 	color: #080808;
 	font-family: Georgia, serif;
@@ -39,9 +43,6 @@ a.override:active { color: #000; text-decoration: none;}
 	margin: 50px 0px 60px 200px;
 }
 
-#flash {
-	color: 'red';
-}
 
 
 #content {
