@@ -1,11 +1,12 @@
 <h1>Current settings:</h1><br />
 <% @settings.each do |s| %>
 <p>
-	<%= s.name %> - <%= link_to "Edit", edit_setting_url(s) %>
+<%= best_in_place s, :name %> - <%= link_to "Edit", edit_setting_url(s) %> %>
 </p>
 <p>
-	<%= s.value %>
+<%= best_in_place s, :value, type: :textarea %>
 </p>
 <% end %>
 
 <%= link_to "Back", root_url %>
+

@@ -47,3 +47,5 @@ gem 'aws-s3'
 gem 'redcarpet'
 
 gem 'twitter'
+
+gem 'best_in_place'
