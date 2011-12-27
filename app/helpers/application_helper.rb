@@ -1,5 +1,6 @@
 module ApplicationHelper
 
+
   # def ga_code
     # if Setting.find_by_name("ga_code").nil?
       # @ga_code = "<!-- No Google Analytics code present -->"
@@ -23,9 +24,16 @@ module ApplicationHelper
     end
 
   def markdown(text)
-    options = [ :hard_wrap, :autolink, :no_intraemphasis, :fenced_code, :gh_blockcode]
-    Redcarpet.new(text, *options).to_html.html_safe
+    redcarpet = Redcarpet::Markdown.new(Redcarpet::Render::HTML,
+             :autolink => true, :space_after_headers => true)
+    redcarpet.render(text).html_safe
   end
+
+  # def markdown(text)
+    # options = [ :hard_wrap, :autolink, :no_intraemphasis, :fenced_code, :gh_blockcode]
+
+    # Markdown.new(text, *options).to_html.html_safe
+  # end
 
   def tweets
    Tweet.order("tweet_date desc").limit(5)

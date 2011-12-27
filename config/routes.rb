@@ -9,6 +9,9 @@ Blog::Application.routes.draw do
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
 
+  # omniauth-twitter
+  match '/auth/twitter/callback', to: 'sessions#create'
+
   root :to => 'posts#index'
 
   match '/', :to => 'post#index'

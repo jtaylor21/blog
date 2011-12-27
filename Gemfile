@@ -6,12 +6,6 @@ gem 'rails', '3.1.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-group :development do
-  gem 'sqlite3'
-end
-
-gem 'json'
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -20,10 +14,18 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+group :development do
+  gem 'sqlite3'
+  gem 'rspec-rails'
+end
 
 group :production do
   gem 'pg'
+end
+
+group :test do
+  gem 'rspec'
+# gem 'webrat'
 end
 
 # To use ActiveModel has_secure_password
@@ -38,6 +40,10 @@ end
 # To use debugger
 # gem 'ruby-debug'
 
+gem 'json'
+
+gem 'jquery-rails'
+
 gem 'kaminari'
 
 gem 'paperclip'
@@ -49,3 +55,5 @@ gem 'redcarpet'
 gem 'twitter'
 
 gem 'best_in_place'
+
+gem 'omniauth-twitter'

@@ -12,7 +12,7 @@
 }
 h1, h2, h3, h4, h5 {
 	color: #080808;
-	font-family: Georgia, serif;
+	font-family: 'Georgia', serif;
 	font-weight: lighter;
 	line-height: 0em;
 
@@ -48,7 +48,7 @@ a.override:active { color: #000; text-decoration: none;}
 #content {
 	size: 80%;
 	color: #1C1C1C;
-	font-family: Georgia, serif;
+	font-family: 'Georgia', serif;
 	line-height: 1.8em;
 	width: 640px;
 	float: left;
