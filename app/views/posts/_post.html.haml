@@ -1,0 +1,12 @@
+%p
+  %h2= @post.title
+%p
+  %h7
+    Posted on #{time_tag(@post.created_at, :format => '%B %d, %Y')}
+- if @post.image.present?
+  %p= image_tag @post.image.url(:medium)
+%p= markdown(@post.body)
+%p
+  %b category:
+  = @post.category
+

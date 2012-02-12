@@ -2,9 +2,7 @@
 
 <%= render 'post' %>
 
-
-
-<% if signed_in? %>
+<% if logged_in? %>
 <%= link_to 'edit', edit_post_path(@post) %> |
 <%= link_to 'delete', @post, :confirm => 'Are you sure?', :method => :delete %> |
 <% else %>
@@ -13,6 +11,5 @@
 <% content_for :sidebar do %>
 	<%= render 'sidebar' %>
 <% end %>
-
 
 <%= link_to 'back', posts_path %>

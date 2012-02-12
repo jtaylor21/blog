@@ -18,15 +18,15 @@
 
 
 
-<% if signed_in? %>
-Logged in as <%= @current_user.name %> | <%= link_to 'Logout', signout_url, :method => :delete %>
+<% if logged_in? %>
+Logged in as <%= link_to 'Logout', sessions_destroy_url, :method => :delete %>
 <p><%= link_to "Settings", settings_url %></p>
 <% else %>
-<p><%= link_to 'Login', new_session_url %></p>
+<p><%= link_to 'Login', login_page_url %></p>
 <%#= link_to 'Login with Twitter', '/auth/twitter' %>
 <% end %>
 
-<% if signed_in? %>
+<% if logged_in? %>
 <p><%= link_to 'New Post', new_post_url %></p>
 <% else %>
 <% end %>

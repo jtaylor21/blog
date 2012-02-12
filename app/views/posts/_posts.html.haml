@@ -1,0 +1,11 @@
+- @posts.each do |post|
+  %h2= link_to post.title, post, :class => "override"
+  %p
+    %h7
+      Posted on #{time_tag(post.created_at, :format => '%B %d, %Y')}
+  - if post.image.present?
+    %p= image_tag post.image.url(:medium)
+  = markdown(post.body)
+  %br/
+  %br/
+= paginate @posts

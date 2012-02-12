@@ -1,7 +1,13 @@
 class PostsController < ApplicationController
 
   before_filter :getposts, :only => [:index, :show]
-  before_filter :require_user, :except => [:index, :show]
+  before_filter :require_user
+
+  def require_user
+    if session[:user_id] == nil
+      redirect_to root_url, :notice => "No way!"
+    end
+  end
 
   def getposts
     @posts = Post.order("created_at desc").page(params[:page]).per(4)

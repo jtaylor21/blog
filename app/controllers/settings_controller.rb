@@ -1,7 +1,12 @@
 class SettingsController < ApplicationController
 
-    before_filter :require_user
-    #before_filter :signed_in?
+  before_filter :require_user
+
+  def require_user
+    if session[:user_id] == nil
+      redirect_to root_url, :notice => "No way!"
+    end
+  end
 
   def edit
     @setting = Setting.find(params[:id])

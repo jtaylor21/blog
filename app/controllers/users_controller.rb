@@ -1,25 +1,24 @@
 class UsersController < ApplicationController
 
-  before_filter :require_user
-
   def new
     @user = User.new
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = User.find(session[:user_id])
   end
 
   def create
     @user = User.new(params[:user])
+
     if @user.save
-      sign_in @user
-      flash[:success] = "Logged in succesfully"
-    redirect_to @user
+      flash[:notice] = "Thanks for signing up!"
+      session[:user_id] = @user.id
+      redirect_to root_url
     else
-      render 'new'
+      flash[:notice] = "No way!"
+      render :new
     end
   end
-
 
 end
