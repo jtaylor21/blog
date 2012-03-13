@@ -23,6 +23,7 @@ end
 
 group :development do
   gem 'sqlite3'
+  gem 'pg'
   gem 'rspec-rails'
 end
 
