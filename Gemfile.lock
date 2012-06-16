@@ -39,7 +39,7 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
-    bcrypt-ruby (3.0.1)
+    bcrypt-ruby (3.0.0)
     best_in_place (1.0.6)
       jquery-rails
       rails (~> 3.1)
@@ -61,7 +61,6 @@ GEM
       multipart-post (~> 1.1)
       rack (~> 1.1)
     haml (3.1.4)
-    hashie (1.2.0)
     hike (1.2.1)
     httparty (0.8.1)
       multi_json
@@ -85,15 +84,6 @@ GEM
     multi_xml (0.4.1)
     multipart-post (1.1.4)
     nokogiri (1.5.0)
-    oauth (0.4.5)
-    omniauth (1.0.2)
-      hashie (~> 1.2)
-      rack
-    omniauth-oauth (1.0.0)
-      oauth
-      omniauth (~> 1.0)
-    omniauth-twitter (0.0.7)
-      omniauth-oauth (~> 1.0)
     paperclip (2.6.0)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
@@ -174,14 +164,13 @@ PLATFORMS
 DEPENDENCIES
   aws-s3
   aws-sdk
-  bcrypt-ruby (~> 3.0.0)
+  bcrypt-ruby (= 3.0.0)
   best_in_place
   coffee-rails
   haml
   jquery-rails
   json
   kaminari
-  omniauth-twitter
   paperclip
   pg
   rails (= 3.2.0)

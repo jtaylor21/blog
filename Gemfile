@@ -10,10 +10,8 @@ gem 'aws-sdk'
 gem 'redcarpet'
 gem 'twitter'
 gem 'best_in_place'
-gem 'omniauth-twitter'
 gem 'haml'
 gem 'bcrypt-ruby', '~> 3.0.0'
-# gem 'omniauth'
 
 group :assets do
   gem 'sass-rails'
@@ -23,7 +21,6 @@ end
 
 group :development do
   gem 'sqlite3'
-  gem 'pg'
   gem 'rspec-rails'
 end
 
