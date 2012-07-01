@@ -12,7 +12,4 @@ Blog::Application.routes.draw do
   post "sessions/create"
   delete "sessions/destroy"
 
-  # omniauth-twitter
-  # match '/auth/twitter/callback', to: 'sessions#create'
-
 end
