@@ -12,6 +12,7 @@ gem 'twitter'
 gem 'best_in_place'
 gem 'haml'
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'rufus-scheduler'
 
 group :assets do
   gem 'sass-rails'
