@@ -1,0 +1,21 @@
+.sidebar_title
+  RECENT POSTS
+
+  .sidebar_content
+    - @recent_posts.each do |post|
+      = link_to post.title, title_url(post.slug)
+      %br
+      
+    %br
+
+.sidebar_title
+  RECENT TWEETS 
+
+  .tweets 
+    - tweets.each do |tweet|
+      %p
+        = markdown(tweet_handle_parser(tweet.text))
+
+- if logged_in?
+  %p
+    = link_to 'New Post', new_post_url

@@ -1,0 +1,83 @@
+.:
+total 80
+drwxr-xr-x  26 vince  staff   884B Jul 15 11:08 .
+drwxr-xr-x  11 vince  staff   374B Jul 13 22:45 ..
+-rw-r--r--   1 vince  staff   6.0K Jun 16 10:03 .DS_Store
+drwxr-xr-x  16 vince  staff   544B Jul 15 11:07 .git
+-rw-r--r--   1 vince  staff    63B Jun 16 10:03 .gitignore
+-rw-r--r--   1 vince  staff     9B Jun 16 10:03 .rspec
+-rw-r--r--   1 vince  staff     9B Jun 16 10:03 .rvmrc
+-rw-r--r--   1 vince  staff   466B Jul 15 10:19 Gemfile
+-rw-r--r--   1 vince  staff   3.9K Jul 11 21:47 Gemfile.lock
+-rw-r--r--   1 vince  staff    29B Jun 16 10:12 README
+-rw-r--r--   1 vince  staff   269B Jun 16 10:03 Rakefile
+drwxr-xr-x   9 vince  staff   306B Jun 16 10:03 app
+drwxr-xr-x  10 vince  staff   340B Jul 15 10:17 config
+-rw-r--r--   1 vince  staff   154B Jun 16 10:03 config.ru
+drwxr-xr-x   7 vince  staff   238B Jun 17 00:04 db
+drwxr-xr-x   3 vince  staff   102B Jun 16 10:03 doc
+drwxr-xr-x   4 vince  staff   136B Jun 16 10:03 gems
+-rw-r--r--   1 vince  staff     0B Jul 15 11:08 grep
+drwxr-xr-x   4 vince  staff   136B Jun 16 10:03 lib
+drwxr-xr-x   4 vince  staff   136B Jun 16 10:06 log
+drwxr-xr-x   8 vince  staff   272B Jun 16 10:03 public
+drwxr-xr-x   3 vince  staff   102B Jun 16 10:03 script
+drwxr-xr-x   5 vince  staff   170B Jun 16 10:03 spec
+drwxr-xr-x   8 vince  staff   272B Jun 16 10:03 test
+drwxr-xr-x   6 vince  staff   204B Jun 16 10:06 tmp
+drwxr-xr-x   4 vince  staff   136B Jun 16 10:03 vendor
+
+/Users/vince:
+total 344
+drwxr-xr-x+ 52 vince  staff   1.7K Jul 15 10:20 .
+drwxr-xr-x   5 root   admin   170B Jun  2 15:09 ..
+-rw-------   1 vince  staff     3B Jun  2 15:07 .CFUserTextEncoding
+-rw-r--r--@  1 vince  staff    24K Jul 14 15:01 .DS_Store
+drwx------   2 vince  staff    68B Jul 14 17:41 .Trash
+-rw-------   1 vince  staff     0B Jul 10 10:33 .Xauthority
+drwxr-xr-x   4 vince  staff   136B Jun  3 06:30 .adobe
+-rw-------   1 vince  staff    44K Jul 15 10:41 .bash_history
+drwxr-xr-x  14 vince  staff   476B Jun  5 14:42 .bash_it
+-rw-r--r--   1 vince  staff   117B Jul 13 23:10 .bash_login
+-rw-r--r--   1 vince  staff   1.0K Jul 13 23:47 .bash_profile
+-rw-r--r--   1 vince  staff   1.1K Jul 13 22:48 .bash_profile.bak
+-rw-r--r--   1 vince  staff    58B Jul 13 23:09 .bashrc
+drwxr-xr-x   3 vince  staff   102B Jun  5 14:48 .cache
+drwx------   3 vince  staff   102B Jun  3 08:37 .cups
+drwxr-xr-x  12 vince  staff   408B Jul 13 22:45 .dotfiles
+drwx------  14 vince  staff   476B Jul 15 11:07 .dropbox
+drwxr-xr-x   5 vince  staff   170B Jul  7 18:27 .dvdcss
+drwx------   9 vince  staff   306B Jul  6 07:04 .filezilla
+drwxr-xr-x   8 vince  staff   272B Jul 10 10:33 .fontconfig
+drwxr-xr-x   3 vince  staff   102B Jun  3 07:42 .gem
+lrwxr-xr-x   1 vince  staff    32B Jun  4 13:27 .gitconfig -> /Users/vince/.dotfiles/gitconfig
+lrwxr-xr-x   1 vince  staff    32B Jun  4 13:27 .gitignore -> /Users/vince/.dotfiles/gitignore
+-rw-r--r--   1 vince  staff   878B Jun  5 14:40 .gitk
+lrwxr-xr-x   1 vince  staff    34B Jun  5 14:47 .gvimrc -> /Users/vince/.vim/janus/vim/gvimrc
+lrwxr-xr-x   1 vince  staff    35B Jun  4 13:27 .gvimrc.after -> /Users/vince/.dotfiles/gvimrc.after
+drwx------   3 vince  staff   102B Jul  6 09:37 .heroku
+-rw-r--r--   1 vince  staff   5.3K Jul 12 22:15 .irb-history
+lrwxr-xr-x   1 vince  staff    28B Jun  4 13:27 .janus -> /Users/vince/.dotfiles/janus
+drwxr-xr-x   3 vince  staff   102B Jul 12 16:49 .knocknock
+-rw-------   1 vince  staff   207B Jun 23 00:05 .netrc
+drwxr-xr-x  29 vince  staff   986B Jun  3 07:39 .rvm
+drwx------   5 vince  staff   170B Jun 17 00:08 .ssh
+lrwxr-xr-x   1 vince  staff    36B Jun  4 13:27 .tm_properties -> /Users/vince/.dotfiles/tm_properties
+drwxr-xr-x  12 vince  staff   408B Jun  5 21:58 .vim
+drwxr-xr-x   3 vince  staff   102B Jun  5 14:42 .vim.old
+-rw-------   1 vince  staff    23K Jul 15 10:20 .viminfo
+lrwxr-xr-x   1 vince  staff    33B Jun  5 14:47 .vimrc -> /Users/vince/.vim/janus/vim/vimrc
+lrwxr-xr-x   1 vince  staff    34B Jun  4 13:27 .vimrc.after -> /Users/vince/.dotfiles/vimrc.after
+-rw-r--r--   1 vince  staff   117B Jul 13 23:24 .zlogin
+-rw-r--r--   1 vince  staff    58B Jul 13 23:24 .zshrc
+drwxr-xr-x   3 vince  staff   102B Jun 10 15:30 Applications
+drwx------+  8 vince  staff   272B Jul 15 10:00 Desktop
+drwx------+  8 vince  staff   272B Jul  8 06:32 Documents
+drwx------+  7 vince  staff   238B Jul 15 10:00 Downloads
+drwx------@  7 vince  staff   238B Jul 14 08:32 Dropbox
+drwx------@ 48 vince  staff   1.6K Jul 13 22:30 Library
+drwx------+  3 vince  staff   102B Jun  2 15:07 Movies
+drwx------+  4 vince  staff   136B Jun  2 16:51 Music
+drwx------+  9 vince  staff   306B Jul  2 12:51 Pictures
+drwxr-xr-x  11 vince  staff   374B Jul 13 22:45 Projects
+drwxr-xr-x+  5 vince  staff   170B Jun  2 15:07 Public

@@ -23,7 +23,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
+    @post = Post.find_by_slug(params[:title])
     @title = @post.title
 
     respond_to do |format|
