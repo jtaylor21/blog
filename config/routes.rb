@@ -14,4 +14,6 @@ Blog::Application.routes.draw do
   post 'sessions/create'
   delete 'sessions/destroy'
 
+  match "*path" => redirect('/')
+
 end
