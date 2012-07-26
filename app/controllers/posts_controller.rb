@@ -23,12 +23,16 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find_by_slug(params[:title])
+    @post = Post.find(params[:id])
     @title = @post.title
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render :json => @post }
+    if params[:permalink] != @post.permalink
+      redirect_to "/posts/#{@post.id}/#{@post.permalink}"
+    else
+      respond_to do |format|
+        format.html # show.html.erb
+        format.json { render :json => @post }
+      end
     end
   end
 
@@ -60,7 +64,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post = Post.find(params[:id])
+    @post = Post.find_by_slug(params[:title])
 
     respond_to do |format|
       if @post.update_attributes(params[:post])

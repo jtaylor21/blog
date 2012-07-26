@@ -1,6 +1,6 @@
 Blog::Application.routes.draw do
 
-  match '/posts/:title', :controller => 'posts', :action => 'show', :as => :title
+  match '/posts/:id/:permalink' => 'posts#show', :as => :permalink
 
   root :to => 'posts#index'
 

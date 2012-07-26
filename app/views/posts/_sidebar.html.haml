@@ -3,7 +3,7 @@
 
   .sidebar_content
     - @recent_posts.each do |post|
-      = link_to post.title, title_url(post.slug)
+      = link_to post.title, permalink_url(post)
       %br
       
     %br

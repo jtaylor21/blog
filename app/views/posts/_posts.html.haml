@@ -1,5 +1,5 @@
 - @posts.each do |post|
-  %h2= link_to post.title, title_url(post.slug), :class => "override"
+  %h2= link_to post.title, "/posts/#{post.id}/#{post.permalink}", :class => "override"
   %p
     %h7
       Posted on #{time_tag(post.created_at, :format => '%B %d, %Y')}
