@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.0'
+gem 'rails', '3.2.3'
 gem 'json'
 gem 'jquery-rails'
 gem 'kaminari'
@@ -12,6 +12,7 @@ gem 'twitter'
 gem 'best_in_place'
 gem 'haml'
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'heroku'
 
 group :assets do
   gem 'sass-rails'
@@ -31,4 +32,3 @@ end
 group :test do
   gem 'rspec'
 end
-
