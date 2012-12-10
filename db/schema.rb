@@ -11,40 +11,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120617050435) do
+ActiveRecord::Schema.define(:version => 20120726030914) do
 
   create_table "posts", :force => true do |t|
-    t.string    "title"
-    t.text      "body"
-    t.string    "category"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.string    "image_file_name"
-    t.string    "image_content_type"
-    t.integer   "image_file_size"
-    t.timestamp "image_updated_at"
-  end
-
-  create_table "settings", :force => true do |t|
-    t.string    "name"
-    t.text      "value"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
+    t.string   "title"
+    t.text     "body"
+    t.string   "category"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "permalink"
   end
 
   create_table "tweets", :force => true do |t|
     t.string   "text"
     t.datetime "tweet_date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
-    t.string    "name"
-    t.string    "email"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.string    "password_digest"
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "password_digest"
   end
 
 end

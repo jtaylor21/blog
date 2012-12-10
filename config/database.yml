@@ -3,3 +3,9 @@ development:
   database: blog_development
   encoding: utf8
   host: localhost
+
+production:
+  adapter: postgresql
+  database: blog_production
+  encoding: utf8
+  host: localhost
