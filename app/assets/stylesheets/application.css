@@ -12,22 +12,23 @@
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #080808;
-	font-family: 'Georgia', serif;
-	font-weight: lighter;
+	font-family: 'Vollkorn', 'Georgia', serif;
 }
 
 h2 {
   font-size: 50px;
-  margin: 0 0 25px 0;
   line-height: 1.2em;
+  font-weight: lighter;
+  margin-bottom: -35px;
 }
 
 h6 {
-	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
+	font-family: 'Vollkorn', 'Georgia', serif;
 	font-size: 20px;
 	color: #848484;
-	letter-spacing: .10em;
-	line-height: 0em;
+  margin-bottom: 6px;
+  font-weight: lighter;
+  /*letter-spacing: .10em;*/
 }
 
 a:link { color: #1F6FBF; text-decoration: none; }
@@ -42,7 +43,8 @@ a.override:active { color: #000; text-decoration: none;}
 
 .content {
 	color: #1C1C1C;
-	font-family: 'Georgia', serif;
+  font-family: 'Vollkorn', serif;
+	/*font-family: 'Georgia', serif;*/
 	line-height: 1.8em;
 	width: 685px;
   margin: 0 auto;
