@@ -14,8 +14,12 @@ h1, h2, h3, h4, h5 {
 	color: #080808;
 	font-family: 'Georgia', serif;
 	font-weight: lighter;
-	line-height: 0em;
+}
 
+h2 {
+  font-size: 50px;
+  margin: 0 0 25px 0;
+  line-height: 1.2em;
 }
 
 h7 {
@@ -27,7 +31,6 @@ h7 {
 	line-height: 0em;
 }
 
-
 a:link { color: #1F6FBF; text-decoration: none; }
 a:visited { color: #1F6FBF; text-decoration: none;}
 a:hover { color: #1F6FBF; text-decoration: underline;}
@@ -38,52 +41,13 @@ a.override:visited { color: #000; text-decoration: none;}
 a.override:hover { color: #000; text-decoration: underline;}
 a.override:active { color: #000; text-decoration: none;}
 
-#header {
-	font-size: 110%;
-	margin: 50px 0px 60px 200px;
-}
-
-
-
-#content {
+.content {
 	size: 80%;
 	color: #1C1C1C;
 	font-family: 'Georgia', serif;
 	line-height: 1.8em;
-	width: 640px;
-	float: left;
-	margin: 0px 0px 50px 200px;
-}
-
-
-
-#sidebar {
-	size: 80%;
-	width: 250;
-	color: #1C1C1C;
-	font-family: Georgia, serif;
-	margin: 0px 0px 0px 850px;
-	padding-left: 25px;
-	line-height: 2.0em;
-}
-#sidebar_title{
-	width: 250px;
-	font-size: 80%;
-	color: #848484;
-	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
-	text-transform: uppercase;
-	border-bottom-style: solid;
-	border-color:#E9E9E9;
-	border-bottom-width: 1px;
-	line-height: 1.4em;
-}
-
-#sidebar_content{
-	width: 285px;
-	color: #1C1C1C;
-	font-family: Georgia, serif;
-	line-height: 2.0em;
-	margin: 7px 0px 0px 5px;
+	width: 685px;
+  margin: 0 auto;
 }
 
 #footer {
@@ -99,4 +63,15 @@ pre {
 	border-radius: 10px;
 	font-size: 85%;
 	overflow: auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.header {
+	font-size: 27px;
+  margin: 20px auto 45px auto;
+  width: 300px
 }

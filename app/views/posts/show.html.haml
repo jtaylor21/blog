@@ -1,0 +1,13 @@
+.header
+  = link_to "Beyond the League", posts_url, :class => "override"
+
+%p#notice
+  = notice
+
+= render 'post'
+
+- if logged_in?
+  = link_to 'edit', edit_post_url(@post)
+  = link_to 'delete', @post, confirm: 'Are you sure?', method: :delete
+
+= link_to 'back', posts_url

@@ -24,21 +24,20 @@
 </head>
 <body>
 
-<div id="header">
-	<h1><%= link_to "#{@blogtitle}", posts_url, :class => "override" %></h1>
-</div>
+  <div class='container'>
 
-<% flash.each do |key, value| %>
-<div id="flash" <%= key %>"><%= value %></div>
-<% end %>
+    <% flash.each do |key, value| %>
+      <div id="flash" "<%= key %>"><%= value %></div>
+    <% end %>
 
-<div id="content">
-<%= yield %>
-</div>
+    <div class="content">
+      <%= yield %>
+    </div>
+
+  </div>
 
 <div id="footer">
 </div>
-
 
 </body>
 </html>
