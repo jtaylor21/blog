@@ -44,12 +44,4 @@ module ApplicationHelper
     # Markdown.new(text, *options).to_html.html_safe
   # end
 
-  def tweets
-   Tweet.order("tweet_date desc").limit(5)
-  end
-
-  def tweet_handle_parser(tweet)
-    tweet.gsub(/@(\w+)/) { |handle| "<a href=http://twitter.com/#{$1} target=_new>@#{$1}</a>" }
-  end
-
 end
