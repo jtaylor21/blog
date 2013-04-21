@@ -30,5 +30,4 @@ Blog::Application.configure do
 end
 
 module Settings
-  TwitterHandle = "vcabansag"
 end
