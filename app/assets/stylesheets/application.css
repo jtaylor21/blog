@@ -12,7 +12,7 @@
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #080808;
-	font-family: 'Vollkorn', 'Georgia', serif;
+	font-family: 'Average', 'Georgia', serif;
 }
 
 h2 {
@@ -20,6 +20,8 @@ h2 {
   line-height: 1.2em;
   font-weight: lighter;
   margin-bottom: -35px;
+  font-family: 'Average', serif;
+  width: 100%;
 }
 
 h6 {
@@ -73,7 +75,7 @@ pre {
 .header {
 	font-size: 27px;
   margin: 20px auto 45px auto;
-  width: 430px;
+  width: 400px;
 }
 
 .post_body {
