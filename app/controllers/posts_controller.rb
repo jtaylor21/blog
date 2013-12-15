@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all.limit(3)
+    @posts = Post.all.sort_by(&:created_at).limit(3)
   end
 
   # GET /posts/1
