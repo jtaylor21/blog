@@ -3,24 +3,25 @@
 </div>
 
 <div id='intro'>
-  I'm Vincent Cabansag, an entreprenuer and developer. I run the operations the <%= link_to 'Starter League', 'http://www.starterleague.com' %> and teach at the <%= link_to 'Starter School', 'http://www.starterschool.com' %>. <br /> I also like to take photos.
+  I'm Vincent Cabansag, an entreprenuer and developer. <br />
+  I run the operations the <%= link_to 'Starter League', 'http://www.starterleague.com' %> and teach at the <%= link_to 'Starter School', 'http://www.starterschool.com' %>.<br />
+  I also like to take photos.
 </div>
 
 <div class='section'>
-  <b>Latest posts</b>
+  <h5>Latest posts</h5>
   <% @posts.each do |post| %>
     <%= post.title %>
   <% end %>
 </div>
 
 <div class='section'>
-  <b>Latest photos</b>
-  <%= link_to 'Instagram', 'http://instagram.com/vcabansag' %>
+  See my latest photos on <%= link_to 'Instagram', 'http://instagram.com/vcabansag' %>.
 </div>
 
 <div class='section'>
   Follow me on Twitter at
-  <%= link_to '@vcabansag', 'https://twitter.com/vcabansag' %>
+  <%= link_to '@vcabansag', 'https://twitter.com/vcabansag' %>.
 </div>
 
 <div class='section'>

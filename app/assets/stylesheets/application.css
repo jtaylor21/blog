@@ -8,6 +8,7 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= normalize
  *= require_self
  *= require_tree .
  */
@@ -19,18 +20,31 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:link, a:active, a:hover, a:visited {
+  color: #006887;
+}
+
+h5 {
+  font-size: 20px;
+  margin: 0;
+}
+
 .container {
   width: 960px;
   margin: 0 auto;
 }
 
 #photo-header {
-  margin-top: 115px;
+  margin-top: 40px;
 }
 
 #intro {
-  margin-top: 40px;
-  padding: 0 190px 0 190px;
+  margin-top: 22px;
+  padding: 0 168px 0 168px;
 }
 
 .section {
