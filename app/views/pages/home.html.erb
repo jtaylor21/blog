@@ -1,0 +1,24 @@
+<div class='section'>
+  I'm Vincent Cabansag, an entreprenuer and developer. I run the operations the <%= link_to 'Starter League', 'http://www.starterleague.com' %> and teach at the <%= link_to 'Starter School', 'http://www.starterschool.com' %>. I also like to take photos.
+</div>
+
+<div class='section'>
+  Latest posts
+  <% @posts.each do |post| %>
+    <%= post.title %>
+  <% end %>
+</div>
+
+<div class='section'>
+  Latest photos
+  <%= link_to 'Instagram', 'http://instagram.com/vcabansag' %>
+</div>
+
+<div class='section'>
+  Follow me on Twitter.
+  <%= link_to '@vcabansag', 'https://twitter.com/vcabansag' %>
+</div>
+
+<div class='section'>
+  Contact me at <%= mail_to 'vcabansag@gmail.com' %>.
+</div>

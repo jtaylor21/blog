@@ -1,86 +1,17 @@
 /*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
  *= require_self
  *= require_tree .
-*/
+ */
 
-#flash {
-	color: green;
-  margin: 0px 0px 0px 200px;
-}
-h1, h2, h3, h4, h5, h6 {
-	color: #080808;
-	font-family: 'Average', 'Georgia', serif;
-}
-
-h2 {
-  font-size: 50px;
-  line-height: 1.2em;
-  font-weight: lighter;
-  margin-bottom: -35px;
-  font-family: 'Average', serif;
-  width: 100%;
-}
-
-h6 {
-	font-family: 'Vollkorn', 'Georgia', serif;
-	font-size: 20px;
-	color: #848484;
-  margin-bottom: 6px;
-  font-weight: lighter;
-  /*letter-spacing: .10em;*/
-}
-
-a:link { color: #1F6FBF; text-decoration: none; }
-a:visited { color: #1F6FBF; text-decoration: none;}
-a:hover { color: #1F6FBF; text-decoration: underline;}
-a:active { color: #1F6FBF; text-decoration: none;}
-
-a.override:link { color: #000; text-decoration: none; }
-a.override:visited { color: #000; text-decoration: none;}
-a.override:hover { color: #000; text-decoration: underline;}
-a.override:active { color: #000; text-decoration: none;}
-
-.content {
-	color: #1C1C1C;
-  font-family: 'Vollkorn', serif;
-	/*font-family: 'Georgia', serif;*/
-	line-height: 1.8em;
-	width: 685px;
-  margin: 0 auto;
-}
-
-#footer {
-	text-align: center;
-	float: bottom;
-}
-
-pre {
-	color: #fff;
-	background: #1C1C1C;
-	padding: 10px;
-	font-family: "Lucida Console", Monaco, monospace;
-	border-radius: 10px;
-	font-size: 85%;
-	overflow: auto;
-}
-
-.container {
-  margin: 0 auto;
-  width: 960px;
-}
-
-.header {
-	font-size: 27px;
-  margin: 20px auto 45px auto;
-  width: 400px;
-}
-
-.post_body {
-  font-size: 20px;
-  color: #3b3b3b;
-  line-height: 1.8em;
-  margin-bottom: 90px;
+body {
+  font-family: 'Proxima Nova';
 }

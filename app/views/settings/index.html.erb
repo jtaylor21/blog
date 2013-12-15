@@ -1,9 +1,0 @@
-<h1>Settings:</h1><br />
-<% @settings.each do |setting| %>
-
-<p><%= best_in_place setting, :name %> - <%= link_to "Edit", edit_setting_url(setting) %></p>
-<p><%= best_in_place setting, :value, type: :textarea %></p>
-
-<% end %>
-
-<%= link_to "Back", root_url %>
