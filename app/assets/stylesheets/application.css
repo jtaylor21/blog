@@ -24,9 +24,12 @@ a {
   text-decoration: none;
 }
 
-a:link, a:active, a:hover, a:visited {
+a:link, a:active, a:visited {
   color: #006887;
 }
+
+
+a:hover { color: #007ba1; }
 
 h5 {
   font-size: 20px;
