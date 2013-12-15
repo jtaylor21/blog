@@ -10,9 +10,11 @@
 
 <div class='section'>
   <h5>Latest posts</h5>
-  <% @posts.each do |post| %>
-    <p><%= post.title %></p>
-  <% end %>
+  <ul>
+    <% @posts.each do |post| %>
+      <li><%= link_to post.title, post %></li>
+    <% end %>
+  </ul>
 </div>
 
 <div class='section'>
