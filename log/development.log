@@ -352,3 +352,48 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-15 00:58:22
 
 
 Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-15 00:58:22 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-15 09:41:16 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered pages/home.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 74ms (Views: 55.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-15 09:41:16 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-15 09:41:16 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-15 09:41:16 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-15 09:41:16 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-15 09:41:16 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-15 09:41:17 -0600
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-15 09:41:17 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-15 09:41:17 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-15 09:41:17 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-15 09:41:17 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-15 09:41:17 -0600
