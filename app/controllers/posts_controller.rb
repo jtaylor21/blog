@@ -1,11 +1,13 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:edit, :update, :destroy]
+  before_action :permalink_params, only: :show
 
   def index
     @posts = Post.all
   end
 
   def show
+    @post = Post.find_by(permalink: params[:id])
   end
 
   def new
@@ -58,5 +60,9 @@ class PostsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
       params.require(:post).permit(:title, :content, :permalink)
+    end
+
+    def permalink_params
+      params.permit(:permalink) 
     end
 end

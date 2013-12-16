@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |t|
       t.string :title
       t.text :content
-      t.string :permalink
+      t.string :permalink, unique: true
 
       t.timestamps
     end
