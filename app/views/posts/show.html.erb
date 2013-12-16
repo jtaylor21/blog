@@ -1,19 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<%= @post.title %>
 
-<p>
-  <strong>Content:</strong>
-  <%= markdown.render @post.content %>
-</p>
+<%= markdown.render(@post.content).html_safe %>
 
-<p>
-  <strong>Permalink:</strong>
-  <%= @post.permalink %>
-</p>
+<%= @post.permalink %>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
