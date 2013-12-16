@@ -1,11 +1,8 @@
-<% @posts.each do |post| %>
-  <%= post.title %>
-  <%#= post.content %>
-  <%= post.body %>
-  <%= post.permalink %>
-  <%= link_to 'Show', post %>
-  <%= link_to 'Edit', edit_post_path(post) %>
-  <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-<% end %>
-
-<%= link_to 'New Post', new_post_path %>
+<ul>
+  <% @posts.each do |post| %>
+    <li><%= link_to post.title, post %></li>
+    <li><%= post.content %></li>
+    <li><%= post.permalink %></li>
+    <li><%= link_to 'edit', edit_post_path(post) %></li>
+  <% end %>
+</ul>
