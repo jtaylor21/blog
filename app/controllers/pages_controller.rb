@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def home
-    @posts = Post.all.sort.reverse[0..2]
+    @posts = Post.all.order('created_at DESC')[0..2]
   end
 
 end
