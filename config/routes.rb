@@ -1,8 +1,8 @@
 Blog::Application.routes.draw do
 
-  resources :posts
+  resources :posts, path: 'blog'
 
-  get '/posts/:permalink' => 'posts#show', as: :permalink
+  get '/blog/:permalink' => 'posts#show', as: :permalink
 
   get '/login' => 'sessions#new', as: :login
   get '/logout' => 'sessions#destroy', as: :logout

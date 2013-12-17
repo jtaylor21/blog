@@ -1,6 +1,6 @@
 <% @posts.each do |post| %>
   <div class='posts-container'>
-    <h1 class='header post-title'><%= link_to post.title, "/posts/#{post.permalink}", permalink: post.permalink %></h1>
+    <h1 class='header post-title'><%= link_to post.title, permalink_path(permalink: post.permalink) %></h1>
     <h4 class='header post-date'><%= "Written on #{post.created_at.strftime('%B %e, %Y')}" %></h4>
     <%= markdown.render(post.content).html_safe %>
     <% if logged_in? %>
