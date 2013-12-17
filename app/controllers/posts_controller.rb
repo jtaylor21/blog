@@ -7,7 +7,6 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find_by(permalink: params[:id])
   end
 
   def new
@@ -63,6 +62,7 @@ class PostsController < ApplicationController
     end
 
     def permalink_params
-      params.permit(:permalink) 
+      params.permit(:id)
+      @post = Post.find_by(permalink: params[:id])
     end
 end
