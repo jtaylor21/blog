@@ -3,6 +3,8 @@ class PostsController < ApplicationController
   before_action :permalink_params, only: :show
   before_action :require_login, only: [:new, :edit, :update, :destroy]
 
+  layout 'blog'
+
   def index
     @posts = Post.all.order('created_at DESC')
   end

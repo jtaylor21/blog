@@ -5,11 +5,14 @@
   padding: 50px;
 }
 
-h1.post-title {
+.header {
   text-align: center;
 }
 
-h4.post-date {
-  text-align:center;
+.post-title {
+}
+
+.post-date {
+  color: #333;
 }
 

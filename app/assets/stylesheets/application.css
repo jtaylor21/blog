@@ -70,3 +70,9 @@ ul {
 li {
   list-style-type: none;
 }
+
+hr {
+  margin: 40px auto 40px auto;
+  width: 50%;
+  color: #444;
+}

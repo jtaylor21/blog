@@ -1,11 +1,7 @@
-<div id='photo-header'>
-  <%= image_tag 'profile-photo.jpg', class: 'profile-photo small' %>You're reading the blog of <%= link_to 'Vincent Cabansag', root_path %>.
-</div>
-
 <% @posts.each do |post| %>
   <div class='posts-container'>
-    <h1 class='post-title'><%= link_to post.title, "/posts/#{post.permalink}", permalink: post.permalink %></h1>
-    <h4 class='post-date'><%= "Written on #{post.created_at.strftime('%B %e, %Y')}" %></h4>
+    <h1 class='header post-title'><%= link_to post.title, "/posts/#{post.permalink}", permalink: post.permalink %></h1>
+    <h4 class='header post-date'><%= "Written on #{post.created_at.strftime('%B %e, %Y')}" %></h4>
     <%= markdown.render(post.content).html_safe %>
     <% if logged_in? %>
         <%= link_to 'Edit post', edit_post_path(post) %>
