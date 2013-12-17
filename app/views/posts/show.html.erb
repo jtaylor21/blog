@@ -1,7 +1,7 @@
 <div class='posts-container'>
 
   <h1 class='header'><%= link_to @post.title, permalink_path(permalink: @post.permalink) %></h1>
-  <h4 class='post-date header'><%= "Written on #{@post.created_at.strftime('%B %e, %Y')}" %></h4>
+  <h5 class='post-date header'><%= "Written on #{@post.created_at.strftime('%B %e, %Y')}" %></h5>
   <%= markdown.render(@post.content).html_safe %>
   <% if logged_in? %>
     <%= link_to 'Edit post', edit_post_path(@post) %>

@@ -10,15 +10,13 @@
  *
  *= normalize
  *= require_self
+ *= require foundation_and_overrides
  *= require_tree .
  */
 
-body {
-  font-family: 'Proxima Nova';
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-}
+/*font-size: 20px;*/
+/*line-height: 28px;*/
+/*text-align: center;*/
 
 a {
   text-decoration: none;
