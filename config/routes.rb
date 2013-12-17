@@ -10,6 +10,6 @@ Blog::Application.routes.draw do
 
   root to: 'pages#home'
 
-  match "*path" => redirect('/') unless Rails.env.development?
+  get "*path" => redirect('/') unless Rails.env.development?
 
 end
