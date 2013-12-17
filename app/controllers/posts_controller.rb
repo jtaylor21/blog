@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:edit, :update, :destroy]
   before_action :permalink_params, only: :show
+  before_action :require_login, only: [:new, :edit, :update, :destroy]
 
   def index
     @posts = Post.all
