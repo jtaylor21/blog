@@ -28,7 +28,6 @@ a:link, a:active, a:visited {
   color: #006887;
 }
 
-
 a:hover { color: #007ba1; }
 
 h5 {
@@ -57,7 +56,11 @@ h5 {
 .profile-photo {
   border-radius: 50%;
   width: 200px;
+  vertical-align: middle;
+  margin-right: 14px;
 }
+
+.small { width: 60px; }
 
 ul {
   margin: 0;
