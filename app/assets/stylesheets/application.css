@@ -14,10 +14,6 @@
  *= require_tree .
  */
 
-/*font-size: 20px;*/
-/*line-height: 28px;*/
-/*text-align: center;*/
-
 a {
   text-decoration: none;
 }
@@ -44,7 +40,6 @@ h5 {
 
 #intro {
   margin-top: 22px;
-  padding: 0 168px 0 168px;
 }
 
 .section {
@@ -70,7 +65,9 @@ li {
 }
 
 hr {
-  margin: 40px auto 40px auto;
+  /*margin: 40px auto 40px auto;*/
+  margin: 0 auto;
   width: 50%;
-  color: #444;
+  border: 1px #444;
+  text-align: center;
 }
