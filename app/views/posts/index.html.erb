@@ -1,8 +1,8 @@
 <% @posts.each do |post| %>
 
-  <div class='show-for-large-up large-9 large-centered columns'>
-    <h1><%= link_to post.title, permalink_path(permalink: post.permalink) %></h1>
-    <h5 class='post-date'><%= "Written on #{post.created_at.strftime('%B %e, %Y')}" %></h5>
+  <div class='show-for-small small-12 small-centered columns'>
+    <h4><%= link_to post.title, permalink_path(permalink: post.permalink) %></h4>
+    <h6 class='post-date'><%= "Written on #{post.created_at.strftime('%B %e, %Y')}" %></h6>
     <%= markdown.render(post.content).html_safe %>
     <% if logged_in? %>
         <%= link_to 'Edit post', edit_post_path(post) %>
@@ -18,9 +18,9 @@
     <% end %>
   </div>
 
-  <div class='show-for-small small-12 small-centered columns'>
-    <h4><%= link_to post.title, permalink_path(permalink: post.permalink) %></h4>
-    <h6 class='post-date'><%= "Written on #{post.created_at.strftime('%B %e, %Y')}" %></h6>
+  <div class='show-for-large-up large-9 large-centered columns'>
+    <h1><%= link_to post.title, permalink_path(permalink: post.permalink) %></h1>
+    <h5 class='post-date'><%= "Written on #{post.created_at.strftime('%B %e, %Y')}" %></h5>
     <%= markdown.render(post.content).html_safe %>
     <% if logged_in? %>
         <%= link_to 'Edit post', edit_post_path(post) %>

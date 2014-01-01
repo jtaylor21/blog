@@ -28,28 +28,26 @@
 
   <body>
     <div class='row'>
-      <div class='small-12 small-centered columns'>
+      <div class='show-for-small small-12 small-centered columns photo-header'>
         <div class='row'>
-          <div class='show-for-large-up large-5 large-centered columns photo-header'>
-            <%= image_tag 'profile-photo.jpg', class: 'profile-photo small' %>You're reading the <%= link_to 'blog', posts_path %> of <%= link_to 'Vincent Cabansag', root_path %>.
-          </div>
-          <div class='show-for-medium large-8 large-centered columns photo-header'>
-            <%= image_tag 'profile-photo.jpg', class: 'profile-photo small' %>You're reading the <%= link_to 'blog', posts_path %> of <%= link_to 'Vincent Cabansag', root_path %>.
-          </div>
-          <div class='show-for-small small-12 small-centered columns photo-header'>
-            <div class='row'>
-              <div class='small-11 small-centered text-center columns'>
-                You're reading the <%= link_to 'blog', posts_path %> of <%= link_to 'Vincent Cabansag', root_path %>.
-              </div>
-            </div>
+          <div class='small-11 small-centered text-center columns'>
+            You're reading the <%= link_to 'blog', posts_path %> of <%= link_to 'Vincent Cabansag', root_path %>.
           </div>
         </div>
-        <p id='notice'><%= notice %></p>
-        <%= yield %>
-        <% if logged_in?  %>
-          <%= link_to 'Logout', logout_path %>
-        <% end %>
       </div>
+      <div class='show-for-medium large-8 large-centered columns photo-header'>
+        <%= image_tag 'profile-photo.jpg', class: 'profile-photo small' %>You're reading the <%= link_to 'blog', posts_path %> of <%= link_to 'Vincent Cabansag', root_path %>.
+      </div>
+      <div class='show-for-large large-5 large-centered columns photo-header'>
+        <%= image_tag 'profile-photo.jpg', class: 'profile-photo small' %>You're reading the <%= link_to 'blog', posts_path %> of <%= link_to 'Vincent Cabansag', root_path %>.
+      </div>
+    </div>
+    <div class='row'>
+      <p id='notice'><%= notice %></p>
+      <%= yield %>
+      <% if logged_in?  %>
+        <%= link_to 'Logout', logout_path %>
+      <% end %>
     </div>
     <%= javascript_include_tag 'application' %>
   </body>
