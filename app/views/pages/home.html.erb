@@ -1,29 +1,38 @@
-<div class='row'>
-  <div class='show-for-small small-10 large-3 large-offset-1 columns'>
-    <%= image_tag 'profile-photo.jpg', class: 'profile-photo' %>
-  </div>
-  <div class='small-10 large-5 columns text-left greeting'>
-    I'm Vincent Cabansag, an entreprenuer and developer. I help make the <%= link_to 'Starter League', 'http://www.starterleague.com' %> the best place to learn and work. I teach at the <%= link_to 'Starter School', 'http://www.starterschool.com' %>. And I also like to take <%= link_to 'photos', 'http://instagram.com/vcabansag' %>.
-  </div>
-  <div class='large-2 columns'></div>
-</div>
+<div class='small-12 large-12 columns'>
 
-<div class='row'>
-  <div class='latest small-12 large-5 large-offset-2 columns'>
-    <h5>Latest posts</h5>
-    <ul>
-      <% @posts.each do |post| %>
-        <li><%= link_to post.title, permalink_path(permalink: post.permalink) %></li>
-      <% end %>
-    </ul>
+  <div class='row'>
+    <div class='show-for-small small-12 columns text-left greeting-small'>
+      <%= image_tag 'profile-photo.jpg', class: 'profile-photo-small text-center' %>
+      I'm Vincent Cabansag, an entreprenuer and developer. I help make the <%= link_to 'Starter League', 'http://www.starterleague.com' %> the best place to learn and work. I teach at the <%= link_to 'Starter School', 'http://www.starterschool.com' %>. And I also like to take <%= link_to 'photos', 'http://instagram.com/vcabansag' %>.
+    </div>
+    <div class='show-for-medium large-10 large-offset-2 columns text-left greeting-large'>
+      <%= image_tag 'profile-photo.jpg', class: 'profile-photo-large text-center' %>
+      <div class='large-8 greeting-text-large'>I'm Vincent Cabansag, an entreprenuer and developer. I help make the <%= link_to 'Starter League', 'http://www.starterleague.com' %> the best place to learn and work. I teach at the <%= link_to 'Starter School', 'http://www.starterschool.com' %>. And I also like to take <%= link_to 'photos', 'http://instagram.com/vcabansag' %>.</div>
+    </div>
+    <div class='show-for-large-up large-10 large-offset-2 columns text-left greeting-large'>
+      <%= image_tag 'profile-photo.jpg', class: 'profile-photo-large text-center' %>
+      <div class='large-8 greeting-text-large'>I'm Vincent Cabansag, an entreprenuer and developer. I help make the <%= link_to 'Starter League', 'http://www.starterleague.com' %> the best place to learn and work. I teach at the <%= link_to 'Starter School', 'http://www.starterschool.com' %>. And I also like to take <%= link_to 'photos', 'http://instagram.com/vcabansag' %>.</div>
+    </div>
   </div>
-  <div class='about small-12 large-5 columns'>
-    <h5>About me</h5>
-    <ul>
-      <li>Read my blog <%= link_to 'here', posts_path %></li>
-      <li>See my latest photos on <%= link_to 'Instagram', 'http://instagram.com/vcabansag' %></li>
-      <li>Follow me on Twitter at <%= link_to '@vcabansag', 'https://twitter.com/vcabansag' %></li>
-      <li>Contact me at <%= mail_to 'vcabansag@gmail.com' %></li>
-    </ul>
+
+  <div class='row'>
+    <div class='latest small-12 large-5 large-offset-2 columns'>
+      <h5>Latest posts</h5>
+      <ul>
+        <% @posts.each do |post| %>
+          <li><%= link_to post.title, permalink_path(permalink: post.permalink) %></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class='about small-12 large-5 columns'>
+      <h5>About me</h5>
+      <ul>
+        <li>Read my blog <%= link_to 'here', posts_path %></li>
+        <li>See my latest photos on <%= link_to 'Instagram', 'http://instagram.com/vcabansag' %></li>
+        <li>Follow me on Twitter at <%= link_to '@vcabansag', 'https://twitter.com/vcabansag' %></li>
+        <li>Contact me at <%= mail_to 'vcabansag@gmail.com' %></li>
+      </ul>
+    </div>
   </div>
+
 </div>

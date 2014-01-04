@@ -27,13 +27,11 @@
 
   <body>
     <div class='row'>
-      <div class='small-12 small-centered large-12 columns text-center'>
-        <p id="notice"><%= notice %></p>
-        <%= yield %>
-        <% if logged_in?  %>
-          <%= link_to 'Logout', logout_path %>
-        <% end %>
-      </div>
+    <p id="notice"><%= notice %></p>
+      <%= yield %>
+      <% if logged_in?  %>
+        <%= link_to 'Logout', logout_path %>
+      <% end %>
     </div>
     <%= javascript_include_tag 'application' %>
   </body>
