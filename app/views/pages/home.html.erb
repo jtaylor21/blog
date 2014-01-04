@@ -3,15 +3,15 @@
   <div class='row'>
     <div class='show-for-small small-12 columns text-left greeting-small'>
       <%= image_tag 'profile-photo.jpg', class: 'profile-photo-small text-center' %>
-      I'm Vincent Cabansag, an entreprenuer and developer. I help make the <%= link_to 'Starter League', 'http://www.starterleague.com' %> the best place to learn and work. I teach at the <%= link_to 'Starter School', 'http://www.starterschool.com' %>. And I also like to take <%= link_to 'photos', 'http://instagram.com/vcabansag' %>.
+      <%= @greeting.html_safe %>
     </div>
     <div class='show-for-medium large-10 large-offset-2 columns text-left greeting-large'>
       <%= image_tag 'profile-photo.jpg', class: 'profile-photo-large text-center' %>
-      <div class='large-8 greeting-text-large'>I'm Vincent Cabansag, an entreprenuer and developer. I help make the <%= link_to 'Starter League', 'http://www.starterleague.com' %> the best place to learn and work. I teach at the <%= link_to 'Starter School', 'http://www.starterschool.com' %>. And I also like to take <%= link_to 'photos', 'http://instagram.com/vcabansag' %>.</div>
+      <div class='large-8 greeting-text-large'><%= @greeting.html_safe %></div>
     </div>
     <div class='show-for-large-up large-10 large-offset-2 columns text-left greeting-large'>
       <%= image_tag 'profile-photo.jpg', class: 'profile-photo-large text-center' %>
-      <div class='large-8 greeting-text-large'>I'm Vincent Cabansag, an entreprenuer and developer. I help make the <%= link_to 'Starter League', 'http://www.starterleague.com' %> the best place to learn and work. I teach at the <%= link_to 'Starter School', 'http://www.starterschool.com' %>. And I also like to take <%= link_to 'photos', 'http://instagram.com/vcabansag' %>.</div>
+      <div class='large-8 greeting-text-large'><%= @greeting.html_safe %></div>
     </div>
   </div>
 
