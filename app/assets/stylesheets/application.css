@@ -9,16 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= normalize
+ *= require foundation_and_overrides
  *= require_self
  *= require_tree .
  */
-
-body {
-  font-family: 'Proxima Nova';
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-}
 
 a {
   text-decoration: none;
@@ -31,36 +25,69 @@ a:link, a:active, a:visited {
 a:hover { color: #007ba1; }
 
 h5 {
-  font-size: 20px;
   margin: 0;
 }
 
-.container {
-  width: 960px;
-  margin: 0 auto;
+.greeting-small {
+  margin-bottom: 30px;
+  line-height: 1.3em;
 }
 
-#photo-header {
+.greeting-text-large {
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  padding: 3px;
+  line-height: 1.4em;
+  margin-left: 14px;
+  margin-bottom: 60px;
+}
+
+.latest {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.about {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.photo-header {
   margin-top: 40px;
-}
-
-#intro {
-  margin-top: 22px;
-  padding: 0 168px 0 168px;
-}
-
-.section {
-  margin: 30px 0 30px 0;
+  margin-bottom: 20px;
 }
 
 .profile-photo {
   border-radius: 50%;
   width: 200px;
   vertical-align: middle;
-  margin-right: 14px;
+  margin-right: 10px;
+  display: block;
 }
 
+.profile-photo-small {
+  border-radius: 50%;
+  width: 175px;
+  vertical-align: middle;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.profile-photo-large {
+  border-radius: 50%;
+  width: 175px;
+  vertical-align: top;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  display: block;
+  float: left;
+}
+
+.medium { width: 120px; }
 .small { width: 60px; }
+.extra-small { width: 30px; }
 
 ul {
   margin: 0;
@@ -72,7 +99,8 @@ li {
 }
 
 hr {
-  margin: 40px auto 40px auto;
+  margin: 0 auto;
   width: 50%;
-  color: #444;
+  border: 1px #444;
+  text-align: center;
 }

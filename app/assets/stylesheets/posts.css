@@ -1,23 +1,9 @@
-.posts-container {
-  margin-top: 40px;
-  text-align: left;
-  padding: 50px;
-}
-
 p img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
 
-.header {
-  text-align: center;
-}
-
-.post-title {
-}
-
 .post-date {
   color: #333;
 }
-
