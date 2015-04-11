@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
@@ -9,7 +10,6 @@ gem 'zurb-foundation'
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
-  gem 'heroku'
 end
 
 group :production do
