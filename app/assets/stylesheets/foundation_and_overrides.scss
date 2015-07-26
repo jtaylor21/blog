@@ -177,11 +177,11 @@ $body-font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Helvetica, Ari
 $header-font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: rgba(0,0,0,.8);
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
-// $header-text-rendering: optimizeLegibility;
+$header-text-rendering: optimizeLegibility;
 
 // Control header font sizes
 
@@ -195,7 +195,7 @@ $h6-font-size: 1em;
 // Control how subheaders are styled.
 
 // $subheader-line-height: 1.4;
-// $subheader-font-color: lighten($header-font-color, 30%);
+$subheader-font-color: lighten($header-font-color, 5%);
 // $subheader-font-weight: 300;
 // $subheader-top-margin: .2em;
 // $subheader-bottom-margin: .5em;
@@ -233,7 +233,7 @@ $h6-font-size: 1em;
 
 // $hr-border-width: 1px;
 // $hr-border-style: solid;
-// $hr-border-color: #ddd;
+$hr-border-color: #444;
 // $hr-margin: em-calc(20);
 
 // Style lists
