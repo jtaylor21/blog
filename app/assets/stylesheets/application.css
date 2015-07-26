@@ -84,15 +84,6 @@ a:hover { color: #007ba1; }
 .small { width: 60px; }
 .extra-small { width: 30px; }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
 hr {
   margin: 0 auto;
   width: 50%;
