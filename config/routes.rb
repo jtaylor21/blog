@@ -7,6 +7,7 @@ Blog::Application.routes.draw do
   get '/login' => 'sessions#new', as: :login
   get '/logout' => 'sessions#destroy', as: :logout
   post '/sessions' => 'sessions#create'
+  get '/resume' => 'pages#resume', as: :resume
 
   root to: 'pages#home'
 
