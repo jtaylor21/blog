@@ -15,14 +15,17 @@
  */
 
 a {
-  text-decoration: none;
+  color: ##00ADEF;
+  text-decoration: underline;
 }
 
 a:link, a:active, a:visited {
-  color: #006887;
+  color: ##00ADEF;
 }
 
-a:hover { color: #007ba1; }
+a:hover {
+  opacity: .8;
+}
 
 .greeting-small {
   margin-bottom: 30px;
@@ -89,4 +92,8 @@ hr {
   width: 50%;
   border: 1px #444;
   text-align: center;
+}
+
+h1.resume-header {
+  color: #00ADEF;
 }
