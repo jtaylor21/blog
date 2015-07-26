@@ -1,38 +1,41 @@
-<div class='small-12 large-12 columns'>
+<div class='row'>
+  <div class='small-12 large-12 columns'>
 
-  <div class='row'>
-    <div class='show-for-small small-12 columns text-left greeting-small'>
-      <%= image_tag 'profile-photo.jpg', class: 'profile-photo-small text-center' %>
-      <%= @greeting.html_safe %>
+    <div class='row'>
+      <div class='show-for-small small-12 columns text-left greeting-small'>
+        <%= image_tag 'profile-photo.jpg', class: 'profile-photo-small text-center' %>
+        <%= @greeting.html_safe %>
+      </div>
+      <div class='show-for-medium large-10 large-offset-2 columns text-left greeting-large'>
+        <%= image_tag 'profile-photo.jpg', class: 'profile-photo-large text-center' %>
+        <div class='large-8 greeting-text-large'><%= @greeting.html_safe %></div>
+      </div>
+      <div class='show-for-large-up large-10 large-offset-2 columns text-left greeting-large'>
+        <%= image_tag 'profile-photo.jpg', class: 'profile-photo-large text-center' %>
+        <div class='large-8 greeting-text-large'><%= @greeting.html_safe %></div>
+      </div>
     </div>
-    <div class='show-for-medium large-10 large-offset-2 columns text-left greeting-large'>
-      <%= image_tag 'profile-photo.jpg', class: 'profile-photo-large text-center' %>
-      <div class='large-8 greeting-text-large'><%= @greeting.html_safe %></div>
+
+    <div class='row'>
+      <div class='latest small-12 large-5 large-offset-2 columns'>
+        <h5>Latest posts</h5>
+        <ul class='no-bullet'>
+          <% @posts.each do |post| %>
+            <li><%= link_to post.title, permalink_path(permalink: post.permalink) %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class='about small-12 large-5 columns'>
+        <h5>About me</h5>
+        <ul class='no-bullet'>
+          <li>Read my blog <%= link_to 'here', posts_path %></li>
+          <li>See my latest photos on <%= link_to 'Instagram', 'http://instagram.com/vcabansag' %></li>
+          <li>Follow me on Twitter at <%= link_to '@vcabansag', 'https://twitter.com/vcabansag' %></li>
+          <li>Take a look at <%= link_to 'my resume', resume_path %></li>
+          <li>Contact me at <%= mail_to 'vcabansag@gmail.com' %></li>
+        </ul>
+      </div>
     </div>
-    <div class='show-for-large-up large-10 large-offset-2 columns text-left greeting-large'>
-      <%= image_tag 'profile-photo.jpg', class: 'profile-photo-large text-center' %>
-      <div class='large-8 greeting-text-large'><%= @greeting.html_safe %></div>
-    </div>
+
   </div>
-
-  <div class='row'>
-    <div class='latest small-12 large-5 large-offset-2 columns'>
-      <h5>Latest posts</h5>
-      <ul>
-        <% @posts.each do |post| %>
-          <li><%= link_to post.title, permalink_path(permalink: post.permalink) %></li>
-        <% end %>
-      </ul>
-    </div>
-    <div class='about small-12 large-5 columns'>
-      <h5>About me</h5>
-      <ul>
-        <li>Read my blog <%= link_to 'here', posts_path %></li>
-        <li>See my latest photos on <%= link_to 'Instagram', 'http://instagram.com/vcabansag' %></li>
-        <li>Follow me on Twitter at <%= link_to '@vcabansag', 'https://twitter.com/vcabansag' %></li>
-        <li>Contact me at <%= mail_to 'vcabansag@gmail.com' %></li>
-      </ul>
-    </div>
-  </div>
-
 </div>
