@@ -21,7 +21,7 @@ task :protect_prod => :environment do
 end
 
 task :capture_prod_db do
-  puts `heroku pgbackups:capture --remote heroku --expire` 
+  puts `heroku pgbackups:capture --remote heroku --expire`
 end
 
 task :download_prod_db do
@@ -29,5 +29,5 @@ task :download_prod_db do
 end
 
 def backup_url
- `heroku pgbackups:url --remote heroku` 
+ `heroku pgbackups:url --remote heroku`
 end
